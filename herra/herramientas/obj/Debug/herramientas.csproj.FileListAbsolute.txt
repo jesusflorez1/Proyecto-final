@@ -1,0 +1,10 @@
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.csproj.AssemblyReference.cache
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\Biblioteca.Form1.resources
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.Properties.Resources.resources
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.csproj.GenerateResource.cache
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.csproj.CoreCompileInputs.cache
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\bin\Debug\herramientas.exe.config
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\bin\Debug\herramientas.exe
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\bin\Debug\herramientas.pdb
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.exe
+C:\Users\Kely Barrientos\Desktop\herra\herramientas\obj\Debug\herramientas.pdb
