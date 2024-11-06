@@ -27,7 +27,7 @@ namespace Biblioteca
             string id = txtIdentificador.Text.Trim();
             string titulo = txtTitulo.Text.Trim();
             DateTime fechaRegistro = dtpFechaRegistro.Value;
-            int cantidad = (int)numericUpDownCantidad.Value;
+            int cantidad = (int)Txtcantidad.Value;
 
             if (materiales.Exists(m => m.Identificador == id))
             {
@@ -41,7 +41,7 @@ namespace Biblioteca
 
             txtIdentificador.Clear();
             txtTitulo.Clear();
-            numericUpDownCantidad.Value = 0;
+            Txtcantidad.Value = 0;
         }
     }
 
