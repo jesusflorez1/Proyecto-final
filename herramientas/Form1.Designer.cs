@@ -1,4 +1,6 @@
-﻿namespace Biblioteca
+﻿
+
+namespace Biblioteca
 {
     partial class Form1
     {
@@ -37,97 +39,149 @@
             this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.Txtcantidad = new System.Windows.Forms.NumericUpDown();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
+            this.cmbRol = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Txtcantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(57, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Identificador";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 72);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(57, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Título";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(57, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Fecha";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(57, 195);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cantidad";
             // 
             // txtIdentificador
             // 
-            this.txtIdentificador.Location = new System.Drawing.Point(191, 43);
-            this.txtIdentificador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdentificador.Location = new System.Drawing.Point(286, 66);
             this.txtIdentificador.Name = "txtIdentificador";
-            this.txtIdentificador.Size = new System.Drawing.Size(68, 20);
+            this.txtIdentificador.Size = new System.Drawing.Size(100, 26);
             this.txtIdentificador.TabIndex = 4;
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(191, 70);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitulo.Location = new System.Drawing.Point(286, 108);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(68, 20);
+            this.txtTitulo.Size = new System.Drawing.Size(100, 26);
             this.txtTitulo.TabIndex = 5;
             // 
             // dtpFechaRegistro
             // 
-            this.dtpFechaRegistro.Location = new System.Drawing.Point(191, 94);
-            this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaRegistro.Location = new System.Drawing.Point(286, 145);
             this.dtpFechaRegistro.Name = "dtpFechaRegistro";
-            this.dtpFechaRegistro.Size = new System.Drawing.Size(135, 20);
+            this.dtpFechaRegistro.Size = new System.Drawing.Size(200, 26);
             this.dtpFechaRegistro.TabIndex = 6;
             // 
             // Txtcantidad
             // 
-            this.Txtcantidad.Location = new System.Drawing.Point(191, 127);
-            this.Txtcantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txtcantidad.Location = new System.Drawing.Point(286, 195);
             this.Txtcantidad.Name = "Txtcantidad";
-            this.Txtcantidad.Size = new System.Drawing.Size(80, 20);
+            this.Txtcantidad.Size = new System.Drawing.Size(120, 26);
             this.Txtcantidad.TabIndex = 7;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(105, 178);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrar.Location = new System.Drawing.Point(554, 357);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(77, 43);
+            this.btnRegistrar.Size = new System.Drawing.Size(116, 66);
             this.btnRegistrar.TabIndex = 8;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(604, 80);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 26);
+            this.txtNombre.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(494, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "nombre";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(501, 214);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "cedula";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Location = new System.Drawing.Point(628, 211);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(100, 26);
+            this.txtCedula.TabIndex = 12;
+            // 
+            // cmbRol
+            // 
+            this.cmbRol.FormattingEnabled = true;
+            this.cmbRol.Location = new System.Drawing.Point(634, 310);
+            this.cmbRol.Name = "cmbRol";
+            this.cmbRol.Size = new System.Drawing.Size(121, 28);
+            this.cmbRol.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(501, 297);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(26, 20);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "rol";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.cmbRol);
+            this.Controls.Add(this.txtCedula);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.Txtcantidad);
             this.Controls.Add(this.dtpFechaRegistro);
@@ -137,9 +191,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Registro de Materiales";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Txtcantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,5 +211,11 @@
         private System.Windows.Forms.DateTimePicker dtpFechaRegistro;
         private System.Windows.Forms.NumericUpDown Txtcantidad;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.ComboBox cmbRol;
+        private System.Windows.Forms.Label label7;
     }
 }
