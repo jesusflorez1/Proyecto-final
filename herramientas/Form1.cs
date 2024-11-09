@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// si se modifico jesus
+// optimize el codgio basandome en las clases que elaboror yisus
 
 namespace Biblioteca
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Windows.Forms;
+
     public partial class Form1 : Form
     {
         private List<Material> materiales;
@@ -47,10 +51,10 @@ namespace Biblioteca
 
     public class Material
     {
-        public string Identificador;
-        public string Titulo;
-        public DateTime FechaRegistro;
-        public int CantidadRegistrada;
+        public string Identificador { get; set; }
+        public string Titulo { get; set; }
+        public DateTime FechaRegistro { get; set; }
+        public int CantidadRegistrada { get; set; }
 
         public Material(string identificador, string titulo, DateTime fechaRegistro, int cantidadRegistrada)
         {
@@ -61,3 +65,4 @@ namespace Biblioteca
         }
     }
 }
+
