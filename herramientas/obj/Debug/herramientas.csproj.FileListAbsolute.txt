@@ -28,3 +28,4 @@ C:\Users\Kely Barrientos\Desktop\herramientas santiago\Proyecto-final\herramient
 C:\Users\Kely Barrientos\Desktop\herramientas santiago\Proyecto-final\herramientas\obj\Debug\herramientas.csproj.CoreCompileInputs.cache
 C:\Users\Kely Barrientos\Desktop\herramientas santiago\Proyecto-final\herramientas\obj\Debug\herramientas.exe
 C:\Users\Kely Barrientos\Desktop\herramientas santiago\Proyecto-final\herramientas\obj\Debug\herramientas.pdb
+C:\Users\Kely Barrientos\Desktop\herramientas santiago\Proyecto-final\herramientas\obj\Debug\Biblioteca.Form2.resources

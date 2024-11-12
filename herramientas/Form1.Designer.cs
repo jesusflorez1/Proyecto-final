@@ -45,6 +45,7 @@ namespace Biblioteca
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnAbrirForm2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Txtcantidad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,11 +172,22 @@ namespace Biblioteca
             this.label7.TabIndex = 11;
             this.label7.Text = "rol";
             // 
+            // btnAbrirForm2
+            // 
+            this.btnAbrirForm2.Location = new System.Drawing.Point(48, 395);
+            this.btnAbrirForm2.Name = "btnAbrirForm2";
+            this.btnAbrirForm2.Size = new System.Drawing.Size(95, 42);
+            this.btnAbrirForm2.TabIndex = 14;
+            this.btnAbrirForm2.Text = "registro";
+            this.btnAbrirForm2.UseVisualStyleBackColor = true;
+            this.btnAbrirForm2.Click += new System.EventHandler(this.btnAbrirForm2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.btnAbrirForm2);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.label7);
@@ -217,5 +229,6 @@ namespace Biblioteca
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnAbrirForm2;
     }
 }
