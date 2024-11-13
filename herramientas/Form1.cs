@@ -13,9 +13,6 @@ using Herramientas;
 
 // Agregue la parte de almacenar informacion
 
-
-
-
 namespace Biblioteca
 {
     public partial class Form1 : Form

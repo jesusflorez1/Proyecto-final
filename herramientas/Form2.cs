@@ -26,14 +26,12 @@ namespace Biblioteca
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // Mostrar los materiales en el DataGridView
             if (Materiales != null && Materiales.Count > 0)
             {
-                dataGridView1.DataSource = null; // Limpiar el DataGridView antes de agregar los datos
+                dataGridView1.DataSource = null; 
                 dataGridView1.DataSource = Materiales;
                 dataGridView1.AutoResizeColumns();
-                dataGridView1.AutoGenerateColumns = true; // Automáticamente genera las columnas basadas en la clase Material
-            }
+                dataGridView1.AutoGenerateColumns = true;  }
             else
             {
                 MessageBox.Show("No hay materiales registrados.");
