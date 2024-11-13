@@ -46,6 +46,7 @@ namespace Biblioteca
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnAbrirForm2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Txtcantidad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,7 +116,7 @@ namespace Biblioteca
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(554, 357);
+            this.btnRegistrar.Location = new System.Drawing.Point(574, 257);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(116, 66);
             this.btnRegistrar.TabIndex = 8;
@@ -125,7 +126,7 @@ namespace Biblioteca
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(604, 80);
+            this.txtNombre.Location = new System.Drawing.Point(634, 54);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 26);
             this.txtNombre.TabIndex = 9;
@@ -133,7 +134,7 @@ namespace Biblioteca
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(494, 80);
+            this.label5.Location = new System.Drawing.Point(532, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 10;
@@ -142,7 +143,7 @@ namespace Biblioteca
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(501, 214);
+            this.label6.Location = new System.Drawing.Point(532, 114);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 20);
             this.label6.TabIndex = 11;
@@ -150,7 +151,7 @@ namespace Biblioteca
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(628, 211);
+            this.txtCedula.Location = new System.Drawing.Point(634, 114);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(100, 26);
             this.txtCedula.TabIndex = 12;
@@ -158,7 +159,7 @@ namespace Biblioteca
             // cmbRol
             // 
             this.cmbRol.FormattingEnabled = true;
-            this.cmbRol.Location = new System.Drawing.Point(634, 310);
+            this.cmbRol.Location = new System.Drawing.Point(634, 187);
             this.cmbRol.Name = "cmbRol";
             this.cmbRol.Size = new System.Drawing.Size(121, 28);
             this.cmbRol.TabIndex = 13;
@@ -166,7 +167,7 @@ namespace Biblioteca
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(501, 297);
+            this.label7.Location = new System.Drawing.Point(532, 178);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(26, 20);
             this.label7.TabIndex = 11;
@@ -182,11 +183,22 @@ namespace Biblioteca
             this.btnAbrirForm2.UseVisualStyleBackColor = true;
             this.btnAbrirForm2.Click += new System.EventHandler(this.btnAbrirForm2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(116, 264);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 53);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Registrar material";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAbrirForm2);
             this.Controls.Add(this.cmbRol);
             this.Controls.Add(this.txtCedula);
@@ -230,5 +242,6 @@ namespace Biblioteca
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnAbrirForm2;
+        private System.Windows.Forms.Button button1;
     }
 }
