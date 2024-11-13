@@ -15,6 +15,7 @@ namespace Biblioteca
     public partial class Form2 : Form
     {
         public List<Material> Materiales { get; set; }
+        public List<Herramientas.Persona> Personas { get; set; }
 
         public Form2()
         {
@@ -26,14 +27,18 @@ namespace Biblioteca
             if (Materiales != null && Materiales.Count > 0)
             {
                 dataGridView1.DataSource = null;
-                dataGridView1.DataSource = Materiales;  
+                dataGridView1.DataSource = Materiales;
                 dataGridView1.AutoResizeColumns();
-
                 dataGridView1.AutoGenerateColumns = true;
             }
             else
             {
                 MessageBox.Show("No hay materiales registrados.");
+            }
+
+             if (Personas != null && Personas.Count > 0)
+            {
+               
             }
         }
     }
