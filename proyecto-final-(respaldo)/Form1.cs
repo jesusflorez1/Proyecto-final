@@ -32,7 +32,7 @@ namespace proyecto_final__respaldo_
             }
 
             if (string.IsNullOrWhiteSpace(textBox3.Text))
-            {
+            {   
                 MessageBox.Show("Por favor, ingrese su nombre.");
                 return;  
             }
@@ -49,9 +49,7 @@ namespace proyecto_final__respaldo_
                 return;
             }
 
-
-            string nombre = textBox3.Text;
-            string rol = comboBox1.SelectedItem.ToString();
+            BibliotecaCatalogo bibliotecaCatalogo = new BibliotecaCatalogo();
 
             int cedula;
 
@@ -61,8 +59,17 @@ namespace proyecto_final__respaldo_
                 return;
             }
 
+            
 
-            Persona persona = new Persona(nombre, cedula, rol);
+            string nombre = textBox3.Text;
+            string rol = comboBox1.SelectedItem.ToString();
+
+            
+
+
+            Persona nuevaPersona = new Persona(nombre, cedula, rol);
+            bibliotecaCatalogo.Personas.Add(nuevaPersona);
+
 
             MessageBox.Show($"Persona Registrada: \nNombre: {nombre}\nCédula: {cedula}\nRol: {rol}");
 
@@ -94,18 +101,27 @@ namespace proyecto_final__respaldo_
                 return;
             }
 
-            
 
 
+
+
+            if (string.IsNullOrWhiteSpace(textBox1.Text) && string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                MessageBox.Show("Por favor, llene todos los campos.");
+                return;
+            }
 
             string identificador = textBox1.Text;
             string titulo = textBox2.Text;
             DateTime fecha = dateTimePicker1.Value;
-            decimal cantidad = numericUpDown1.Value=0;
+            int cantidadRegistrada = (int)numericUpDown1.Value;
+            int cantidadActual = cantidadRegistrada;
 
+            Material nuevoMaterial = new Material(identificador, titulo, fecha, cantidadRegistrada, cantidadActual);
+            BibliotecaCatalogo bibliotecaCatalogo = new BibliotecaCatalogo();
+            bibliotecaCatalogo.Materials.Add(nuevoMaterial);
 
-            MessageBox.Show($"material registrado \nIdentificador: {identificador}\nTítulo: {titulo}\nFecha: {fecha.ToShortDateString()}\nCantidad: {cantidad}");
-
+            MessageBox.Show($"Material registrado \nIdentificador: {identificador}\nTítulo: {titulo}\nFecha: {fecha.ToShortDateString()}\nCantidad: {cantidadRegistrada}");
 
             textBox1.Clear();
             textBox2.Clear();
@@ -113,7 +129,7 @@ namespace proyecto_final__respaldo_
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(biblioteca);
             form2.ShowDialog();
         }
     }

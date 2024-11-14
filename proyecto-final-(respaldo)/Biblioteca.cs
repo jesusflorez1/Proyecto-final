@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace proyecto_final__respaldo_
 {
-    internal class Biblioteca
+    public class Biblioteca
     {
         public class Material
         {
@@ -73,12 +73,14 @@ namespace proyecto_final__respaldo_
 
             public enum tipo { valorPrestamo, valorDevolucion}
         }
-        public class biblioteca
+        public class BibliotecaCatalogo
         {
             public List<Material> Materials { get; set; } = new List<Material>();
-            public List<Persona> Persona { get; set; } = new List<Persona>();
-            public List<Movimiento> Movimiento { get; set;} = new List<Movimiento>();
-            
+
+            public List<Persona> Personas { get; set; } = new List<Persona>();
+
+            public List<Movimiento> Movimiento { get; set; } = new List<Movimiento>();
+
         }
     }
 }

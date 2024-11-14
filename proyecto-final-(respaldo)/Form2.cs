@@ -12,7 +12,7 @@ namespace proyecto_final__respaldo_
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(Biblioteca biblioteca)
         {
             InitializeComponent();
         }
