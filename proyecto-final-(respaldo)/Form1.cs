@@ -24,6 +24,7 @@ namespace proyecto_final__respaldo_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //falta hacer que no se pueda repetir cedula 
 
             if (string.IsNullOrWhiteSpace(textBox3.Text) && string.IsNullOrWhiteSpace(textBox4.Text) && comboBox1.SelectedItem == null)
             {
@@ -63,10 +64,7 @@ namespace proyecto_final__respaldo_
 
             string nombre = textBox3.Text;
             string rol = comboBox1.SelectedItem.ToString();
-
             
-
-
             Persona nuevaPersona = new Persona(nombre, cedula, rol);
             bibliotecaCatalogo.Personas.Add(nuevaPersona);
 
@@ -110,7 +108,8 @@ namespace proyecto_final__respaldo_
                 MessageBox.Show("Por favor, llene todos los campos.");
                 return;
             }
-
+            // agregar cedula para poder evitar que no todos registren material solo personas regsitradas 
+            
             string identificador = textBox1.Text;
             string titulo = textBox2.Text;
             DateTime fecha = dateTimePicker1.Value;

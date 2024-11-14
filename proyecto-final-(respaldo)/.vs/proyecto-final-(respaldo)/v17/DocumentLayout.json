@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|c:\\users\\kely barrientos\\desktop\\herramientas santiago\\proyecto-final\\proyecto-final\\proyecto-final-(respaldo)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|c:\\users\\kely barrientos\\desktop\\herramientas santiago\\proyecto-final\\proyecto-final\\proyecto-final-(respaldo)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98B83967-0179-49FB-883F-58B7F66908A3}|proyecto-final-(respaldo).csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -70,27 +70,27 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwD0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T02:12:06.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Biblioteca.cs",
               "DocumentMoniker": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Biblioteca.cs",
               "RelativeDocumentMoniker": "Biblioteca.cs",
               "ToolTip": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Biblioteca.cs",
               "RelativeToolTip": "Biblioteca.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwEsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAkwEcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T02:22:12.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Kely Barrientos\\Desktop\\herramientas santiago\\Proyecto-final\\Proyecto-final\\proyecto-final-(respaldo)\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
