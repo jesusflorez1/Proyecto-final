@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static proyecto_final__respaldo_.Biblioteca;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace proyecto_final__respaldo_
@@ -23,16 +24,88 @@ namespace proyecto_final__respaldo_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+            if (string.IsNullOrWhiteSpace(textBox3.Text) && string.IsNullOrWhiteSpace(textBox4.Text) && comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, llene todos los campos.");
+                return;  
+            }
+
+            if (string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                MessageBox.Show("Por favor, ingrese su nombre.");
+                return;  
+            }
+
+            if (string.IsNullOrWhiteSpace(textBox4.Text))
+            {
+                MessageBox.Show("Por favor, ingrese su cédula.");
+                return;  
+            }
+
+            if (comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, seleccione un rol.");
+                return;
+            }
+
+
+            string nombre = textBox3.Text;
+            string rol = comboBox1.SelectedItem.ToString();
+
+            int cedula;
+
+            if (!int.TryParse(textBox4.Text, out cedula))
+            {
+                MessageBox.Show("La cédula no es válida.");
+                return;
+            }
+
+
+            Persona persona = new Persona(nombre, cedula, rol);
+
+            MessageBox.Show($"Persona Registrada: \nNombre: {nombre}\nCédula: {cedula}\nRol: {rol}");
+
+
+
+            textBox3.Clear();
+            textBox4.Clear();
+            comboBox1.SelectedItem = null;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
+
+            if (string.IsNullOrWhiteSpace(textBox1.Text) && string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                MessageBox.Show("por favor, complete todos los campos del material");
+                MessageBox.Show("Por favor, llene todos los campos.");
                 return;
             }
+
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un identificador.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                MessageBox.Show("Por favor, ingrese un titulo.");
+                return;
+            }
+
+            
+
+
+
+            string identificador = textBox1.Text;
+            string titulo = textBox2.Text;
+            DateTime fecha = dateTimePicker1.Value;
+            decimal cantidad = numericUpDown1.Value=0;
+
+
+            MessageBox.Show($"material registrado \nIdentificador: {identificador}\nTítulo: {titulo}\nFecha: {fecha.ToShortDateString()}\nCantidad: {cantidad}");
+
 
             textBox1.Clear();
             textBox2.Clear();

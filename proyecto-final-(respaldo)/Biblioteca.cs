@@ -37,20 +37,19 @@ namespace proyecto_final__respaldo_
         {
             private string nombre;
             private int cedula;
-            private rol roles;
+            private string roles;
 
             public string Nombre { get => nombre; set => nombre = value; }
             public int Cedula { get => cedula; set => cedula = value; }
-            internal rol Roles { get => roles; set => roles = value; }
+            public string Roles { get => roles; set => roles = value; }
 
-            public Persona(string nombre, int cedula, rol roles)
+            public Persona(string nombre, int cedula, string roles)
             {
                 this.Nombre = nombre;
                 this.Cedula = cedula;
                 this.Roles = roles;
             }
 
-            public enum rol { estudiante, profesor , administrativo}
         }
         public class Movimiento
         {
