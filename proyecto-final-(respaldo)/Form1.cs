@@ -131,5 +131,10 @@ namespace proyecto_final__respaldo_
             Form2 form2 = new Form2(biblioteca);
             form2.ShowDialog();
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
