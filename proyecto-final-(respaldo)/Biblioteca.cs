@@ -31,7 +31,7 @@ namespace proyecto_final__respaldo_
                 this.Cantidad_registrada = cantidad_registrada;
                 this.Cantidad_actual = cantidad_actual;
             }
-            
+
         }
         public class Persona
         {
@@ -42,12 +42,15 @@ namespace proyecto_final__respaldo_
             public string Nombre { get => nombre; set => nombre = value; }
             public int Cedula { get => cedula; set => cedula = value; }
             public string Roles { get => roles; set => roles = value; }
+            public List<Material> Materiales { get; set; }
+
 
             public Persona(string nombre, int cedula, string roles)
             {
                 this.Nombre = nombre;
                 this.Cedula = cedula;
                 this.Roles = roles;
+                this.Materiales = new List<Material>();
             }
 
         }
@@ -71,7 +74,7 @@ namespace proyecto_final__respaldo_
                 this.Tip = tip;
             }
 
-            public enum tipo { valorPrestamo, valorDevolucion}
+            public enum tipo { valorPrestamo, valorDevolucion }
         }
         public class BibliotecaCatalogo
         {
