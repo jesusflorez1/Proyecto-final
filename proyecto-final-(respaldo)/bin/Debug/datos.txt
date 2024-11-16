@@ -1,0 +1,9 @@
+Persona|santiago|100|estudiante	
+Material|ajafjai|ajfjf|2024-11-15|0
+Material|jajaf|fjafja|2024-11-15|10
+Material|fkfk|kfofk|2024-11-15|0
+Material|ddddddddd|ddddddd|2024-11-15|0
+Persona|jaime|200|estudiante	
+Material|fkofko|fofkofko|2024-11-15|3
+Material|kfkfk|kfkf|2024-11-15|3
+Material|jjjj|jjjjj|2024-11-15|0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,8 +23,9 @@ namespace proyecto_final__respaldo_
             InitializeComponent();
             this.biblioteca = new Biblioteca();
             bibliotecaCatalogo.Personas = new List<Persona>();
+            bibliotecaCatalogo.Materials = new List<Material>();
+            CargarDatosDesdeTxt();
             ActualizarDataGridView();
-
             MessageBox.Show("Bienvenido");
         }
 
@@ -90,6 +92,7 @@ namespace proyecto_final__respaldo_
             comboBox1.SelectedItem = null;
 
             ActualizarDataGridView();
+            GuardarDatosEnTxt();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -120,11 +123,13 @@ namespace proyecto_final__respaldo_
             }
 
             bool cedulaRegistrada = false;
+            Persona personaRegistrada = null;
             foreach (var persona in bibliotecaCatalogo.Personas)
             {
                 if (persona.Cedula == cedula)
                 {
                     cedulaRegistrada = true;
+                    personaRegistrada = persona;
                     break;
                 }
             }
@@ -161,6 +166,8 @@ namespace proyecto_final__respaldo_
             Material nuevoMaterial = new Material(identificador, titulo, fecha, cantidadRegistrada, cantidadActual);
             bibliotecaCatalogo.Materials.Add(nuevoMaterial);
 
+            personaRegistrada.Materiales.Add(nuevoMaterial);
+
             MessageBox.Show($"Material registrado \nIdentificador: {identificador}\nTítulo: {titulo}\nFecha: {fecha.ToShortDateString()}\nCantidad: {cantidadRegistrada}\nCédula: {cedula}");
 
             textBox1.Clear();
@@ -169,6 +176,65 @@ namespace proyecto_final__respaldo_
             numericUpDown1.Value = 0;
 
             ActualizarDataGridView();
+            GuardarDatosEnTxt();
+        }
+
+        private void CargarDatosDesdeTxt()
+        {
+            if (!File.Exists("datos.txt"))
+                return;
+
+            using (StreamReader reader = new StreamReader("datos.txt"))
+            {
+                string linea;
+                Persona personaActual = null;
+
+                while ((linea = reader.ReadLine()) != null)
+                {
+                    var partes = linea.Split('|');
+                    if (partes[0] == "Persona")
+                    {
+                        personaActual = new Persona(partes[1], int.Parse(partes[2]), partes[3]);
+                        bibliotecaCatalogo.Personas.Add(personaActual);
+                    }
+                    else if (partes[0] == "Material" && personaActual != null)
+                    {
+                        Material material = new Material(
+                            partes[1],
+                            partes[2],
+                            DateTime.Parse(partes[3]),
+                            int.Parse(partes[4]),
+                            int.Parse(partes[4])
+                        );
+                        personaActual.Materiales.Add(material);
+                    }
+                }
+            }
+        }
+
+        private void GuardarDatosEnTxt()
+        {
+            using (StreamWriter writer = new StreamWriter("datos.txt"))
+            {
+                foreach (var persona in bibliotecaCatalogo.Personas)
+                {
+                    writer.WriteLine($"Persona|{persona.Nombre}|{persona.Cedula}|{persona.Roles}");
+
+                    if (persona.Materiales != null && persona.Materiales.Count > 0)
+                    {
+                        foreach (var material in persona.Materiales)
+                        {
+                            writer.WriteLine($"Material|{material.Identificador}|{material.Titulo}|{material.Fecharegistro:yyyy-MM-dd}|{material.Cantidad_registrada}");
+                        }
+                    }
+                }
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            GuardarDatosEnTxt();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -180,6 +246,7 @@ namespace proyecto_final__respaldo_
         private void ActualizarDataGridView()
         {
         }
+
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();

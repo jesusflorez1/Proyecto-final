@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 using static proyecto_final__respaldo_.Biblioteca;
+
 
 namespace proyecto_final__respaldo_
 {
@@ -20,6 +23,7 @@ namespace proyecto_final__respaldo_
             InitializeComponent();
             this.personas = personas;
 
+            ConfigurarDataGridView();
             ActualizarDataGridView();
 
             MessageBox.Show("Base de Datos");
@@ -29,51 +33,61 @@ namespace proyecto_final__respaldo_
         {
         }
 
+        private void ConfigurarDataGridView()
+        {
+            dataGridView.Columns.Clear();
+
+            dataGridView.Columns.Add("Nombre", "Nombre");
+            dataGridView.Columns.Add("Cedula", "Cédula");
+            dataGridView.Columns.Add("Identificador", "Identificador");
+            dataGridView.Columns.Add("Titulo", "Título");
+            dataGridView.Columns.Add("FechaRegistro", "Fecha de Registro");
+            dataGridView.Columns.Add("CantidadRegistrada", "Cantidad Registrada");
+        }
+
         public void ActualizarDataGridView()
         {
             dataGridView.Rows.Clear();
 
             foreach (var persona in personas)
             {
-                // Filas para la persona
-                var personaFila = new DataGridViewRow();
-                personaFila.Cells.Add(new DataGridViewTextBoxCell() { Value = persona.Nombre });
-                personaFila.Cells.Add(new DataGridViewTextBoxCell() { Value = persona.Cedula });
+                bool personaAgregada = false;
 
-                dataGridView.Rows.Add(personaFila);
+                foreach (DataGridViewRow row in dataGridView.Rows)
+                {
+                    if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == persona.Cedula.ToString())
+                    {
+                        personaAgregada = true;
+                        break;
+                    }
+                }
 
-                // Añadir los materiales de cada persona
+                if (!personaAgregada)
+                {
+                    var personaFila = new DataGridViewRow();
+                    personaFila.CreateCells(dataGridView, persona.Nombre, persona.Cedula.ToString(), "", "", "", "");
+                    dataGridView.Rows.Add(personaFila);
+                }
+
                 foreach (var material in persona.Materiales)
                 {
                     var materialFila = new DataGridViewRow();
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = persona.Nombre }); // Nombre de la persona
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = persona.Cedula }); // Cédula de la persona
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = material.Identificador }); // Identificador del material
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = material.Titulo }); // Título del material
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = material.Fecharegistro.ToShortDateString() }); // Fecha del material
-                    materialFila.Cells.Add(new DataGridViewTextBoxCell() { Value = material.Cantidad_registrada }); // Cantidad registrada del material
-
+                    materialFila.CreateCells(dataGridView,
+                        persona.Nombre,
+                        persona.Cedula.ToString(),
+                        material.Identificador,
+                        material.Titulo,
+                        material.Fecharegistro.ToShortDateString(),
+                        material.Cantidad_registrada);
                     dataGridView.Rows.Add(materialFila);
                 }
             }
         }
 
-        // Método para agregar una nueva persona a la lista
         public void AgregarPersona(Persona nuevaPersona)
         {
-            personas.Add(nuevaPersona);  // Agregar la persona a la lista
-            ActualizarDataGridView();    // Actualizar el DataGridView
-        }
-
-        // Método para eliminar una persona
-        public void EliminarPersona(int cedula)
-        {
-            var personaAEliminar = personas.FirstOrDefault(p => p.Cedula == cedula);
-            if (personaAEliminar != null)
-            {
-                personas.Remove(personaAEliminar);  // Eliminar la persona de la lista
-                ActualizarDataGridView();           // Actualizar el DataGridView
-            }
+            personas.Add(nuevaPersona);
+            ActualizarDataGridView();
         }
     }
 }

@@ -42,7 +42,7 @@ namespace proyecto_final__respaldo_
             public string Nombre { get => nombre; set => nombre = value; }
             public int Cedula { get => cedula; set => cedula = value; }
             public string Roles { get => roles; set => roles = value; }
-            public List<Material> Materiales { get; set; }
+            public List<Material> Materiales { get; set; } = new List<Material>(); 
 
 
             public Persona(string nombre, int cedula, string roles)
