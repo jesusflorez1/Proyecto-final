@@ -1,0 +1,5 @@
+Persona|santiago|1001227415|estudiante	
+Material|123|hola|2024-11-20|2
+Persona|jesus|10012274|administrativo
+Persona|wilson|10012275|estudiante	
+Material|1233|hola 2|2024-11-20|3
